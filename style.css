@@ -157,3 +157,40 @@ padding:15px 5%;
 }
 
 }
+<section id="shop">
+
+<h2>Shop Drinkenigy</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>⚡ Drinkenigy Original</h3>
+<p>Classic energy formula.</p>
+<h2>₦2,500</h2>
+<button>Buy Now</button>
+</div>
+
+<div class="card">
+<h3>🍓 Electric Berry</h3>
+<p>Sweet berry flavour with maximum energy.</p>
+<h2>₦2,700</h2>
+<button>Buy Now</button>
+</div>
+
+<div class="card">
+<h3>🍋 Neon Citrus</h3>
+<p>Fresh citrus taste with clean energy.</p>
+<h2>₦2,700</h2>
+<button>Buy Now</button>
+</div>
+
+<div class="card">
+<h3>🥭 Tropical Surge</h3>
+<p>Refreshing tropical flavour.</p>
+<h2>₦2,900</h2>
+<button>Buy Now</button>
+</div>
+
+</div>
+
+</section>
