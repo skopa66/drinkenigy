@@ -115,3 +115,148 @@ animation:float 4s ease-in-out infinite;
 0%,100%{transform:translateY(0);}
 50%{transform:translateY(-20px);}
 }
+/* ===========================
+   PART 2 - SHOP & EFFECTS
+=========================== */
+
+.hero{
+position:relative;
+overflow:hidden;
+}
+
+/* Blue glow behind the can */
+.hero::before{
+content:"";
+position:absolute;
+right:8%;
+top:50%;
+transform:translateY(-50%);
+width:500px;
+height:500px;
+border-radius:50%;
+background:radial-gradient(circle,#1fa8ff55,transparent 70%);
+filter:blur(60px);
+z-index:0;
+}
+
+.hero-text,
+.hero-image{
+position:relative;
+z-index:2;
+}
+
+/* Shop */
+
+#shop{
+padding:100px 8%;
+background:#05070d;
+}
+
+#shop h2{
+font-size:48px;
+margin-bottom:50px;
+text-align:center;
+letter-spacing:2px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:#111722;
+border:1px solid rgba(40,183,255,.15);
+border-radius:20px;
+padding:25px;
+text-align:center;
+transition:.35s;
+box-shadow:0 0 20px rgba(0,0,0,.4);
+}
+
+.card:hover{
+transform:translateY(-12px);
+border-color:#28b7ff;
+box-shadow:0 0 35px rgba(40,183,255,.35);
+}
+
+.card img{
+width:150px;
+margin-bottom:20px;
+filter:drop-shadow(0 0 18px #28b7ff);
+}
+
+.card h3{
+font-size:26px;
+margin-bottom:10px;
+}
+
+.card p{
+color:#bfc7d5;
+margin-bottom:15px;
+}
+
+.card h2{
+color:#28b7ff;
+margin-bottom:20px;
+font-size:34px;
+}
+
+.card button{
+width:100%;
+padding:14px;
+border:none;
+border-radius:40px;
+font-weight:bold;
+cursor:pointer;
+background:linear-gradient(90deg,#28b7ff,#00d2ff);
+transition:.3s;
+}
+
+.card button:hover{
+transform:scale(1.05);
+}
+
+/* Footer */
+
+footer{
+padding:60px 8%;
+text-align:center;
+background:#030507;
+border-top:1px solid rgba(255,255,255,.08);
+}
+
+footer h2{
+font-size:38px;
+margin-bottom:10px;
+}
+
+footer p{
+color:#9fa8b5;
+}
+
+/* Mobile */
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+padding-top:140px;
+}
+
+.hero h1{
+font-size:52px;
+}
+
+.hero-image img{
+width:280px;
+margin-top:40px;
+}
+
+nav ul{
+display:none;
+}
+
+}
