@@ -297,3 +297,10 @@ color:#28b7ff;
 color:#d3dbe5;
 line-height:1.6;
 }
+.e{
+color:#28b7ff;
+text-shadow:
+0 0 10px #28b7ff,
+0 0 20px #28b7ff,
+0 0 40px #28b7ff;
+}
